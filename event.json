@@ -1,0 +1,17 @@
+// Evoling example
+{
+    "user": 1, // User ID
+    "time": "2017-06-05Z14:13:12.1", // Datetime whether it's date or time
+    "event_type": 1, // Template for event?
+    "address": { // Only allow 1 address per event to keep it simple and known type
+        "name": "123 Fake St, Fakeston",
+        "X": 123, // Float or Int? For map plotting
+        "Y": 234 // Float or Int?
+    },
+    "properties": { // Arbitrary fields from lego blocks
+        "split": true, // bool
+        "cuisine": "japanese", // string
+        "cost": "123.40", // Float. Get currency from user?
+        "tip": "12.34" // Float
+    }
+}
